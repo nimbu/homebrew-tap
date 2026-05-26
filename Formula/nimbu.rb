@@ -5,21 +5,21 @@
 class Nimbu < Formula
   desc "CLI for the Nimbu API"
   homepage "https://github.com/nimbu/nimbu-go-cli"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nimbu/cli/releases/download/v0.2.0/nimbu_0.2.0_darwin_amd64.tar.gz"
-      sha256 "ee968ba59a28794be5837ecfde4e6b410af8424b6c91b834b76da55e6116ae75"
+      url "https://github.com/nimbu/cli/releases/download/v0.2.1/nimbu_0.2.1_darwin_amd64.tar.gz"
+      sha256 "0156ab7d645ecab282dcb27ecfd19fec555615e8c7a087e23f1c524d8a251feb"
 
       define_method(:install) do
         bin.install "nimbu"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nimbu/cli/releases/download/v0.2.0/nimbu_0.2.0_darwin_arm64.tar.gz"
-      sha256 "c3c8921949943fc47fce9a989e5a027c979d3254ad8ee07aad244facfae6b12a"
+      url "https://github.com/nimbu/cli/releases/download/v0.2.1/nimbu_0.2.1_darwin_arm64.tar.gz"
+      sha256 "0089783090da82dc2f76fc36c9169f6cac3b9e54ae1b246858f425573c57fb49"
 
       define_method(:install) do
         bin.install "nimbu"
@@ -29,15 +29,15 @@ class Nimbu < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nimbu/cli/releases/download/v0.2.0/nimbu_0.2.0_linux_amd64.tar.gz"
-      sha256 "e89608aaae58e8c271a322416e91c7b68b6a6b329667b783f1270e37026f6a70"
+      url "https://github.com/nimbu/cli/releases/download/v0.2.1/nimbu_0.2.1_linux_amd64.tar.gz"
+      sha256 "75f3960e613b6c27ed3f047b59b60a5f5fc6644bbea4513a2c9eba5b6c8a8665"
       define_method(:install) do
         bin.install "nimbu"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nimbu/cli/releases/download/v0.2.0/nimbu_0.2.0_linux_arm64.tar.gz"
-      sha256 "b1a83859bcab1726fd5c21671c131d1bb247f282bc64e6a4b90372fe001086ae"
+      url "https://github.com/nimbu/cli/releases/download/v0.2.1/nimbu_0.2.1_linux_arm64.tar.gz"
+      sha256 "04c18d4777e865ce6683e60947567636fc51831bf654ae62a822245135653ff5"
       define_method(:install) do
         bin.install "nimbu"
       end
